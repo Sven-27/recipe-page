@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+  /* Color variables */
+  --white: #fff;
+  --rose-50: #fff7fb;
+  --rose-800: #7a284e;
+  --stone-100: #f3e5d7;
+  --stone-150: #e3ddd7;
+  --stone-600: #5f564d;
+  --stone-900: #312e2c;
+  --brown-800: #854632;
+
+  /* Spacing variables */
+  --s-100: 8px;
+  --s-150: 12px;
+  --s-200: 16px;
+  --s-300: 24px;
+  --s-400: 32px;
+  --s-500: 40px;
+  --s-600: 48px;
+  --s-1600: 128px;
+
+  /* Font sizes */
+  --fs-16: 16px;
+  --fs-20: 20px;
+  --fs-28: 28px;
+  --fs-40: 40px;
+
+  /* Font weights */
+  --fw-400: 400; /* Regular */ 
+  --fw-600: 600; /* Semi-bold */
+  --fw-700: 700; /* Bold */
+}
+
+/* Styling fonts */
+.text-preset-1{
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2.5rem
+}
