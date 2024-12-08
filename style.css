@@ -27,6 +27,7 @@
   --fs-16: 16px;
   --fs-20: 20px;
   --fs-28: 28px;
+  --fs-36: 36px;
   --fs-40: 40px;
 
   /* Font weights */
@@ -49,7 +50,7 @@
 .text-preset-1{
   font-family: "Young Serif", serif;
   font-weight: var(--fw-400);
-  font-size: var(--fs-40);
+  font-size: clamp(var(--fs-36), 4vw, var(--fs-40));
   color: var(--stone-900);
 }
 
@@ -93,6 +94,48 @@ body{
   place-items: center;
   background: var(--stone-100);
   min-height: 100vh;
+
+  main{
+    background: var(--white);
+    padding: var(--s-500) var(--s-400);
+
+    .img-container{
+      margin-bottom: var(--s-400);
+
+      img{
+        margin-top: -40px;
+        margin-left: -40px;
+        width: calc(100% + 70px);
+      }
+    }
+
+    .title-recipe{
+      .about-recipe{
+        padding: var(--s-400) 0 var(--s-300);
+      }
+    }
+
+    .cooking-time{
+      background: var(--rose-50);
+      padding: var(--s-300);
+      border-radius: 12px;
+
+      ul{
+        padding: var(--s-300) 0 0 var(--s-300);
+
+        li{
+          padding-left: var(--s-200);;
+          &::marker{
+            color: var(--rose-800);
+          }
+
+          &:not(:last-of-type){
+            padding-bottom: var(--s-100);
+          }
+        }
+      }
+    }
+  }
 
   footer{
     font-size: 11px; 
