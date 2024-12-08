@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 :root{
+  /* Setting all needed variables */
+
   /* Color variables */
   --white: #fff;
   --rose-50: #fff7fb;
@@ -31,11 +33,51 @@
   --fw-400: 400; /* Regular */ 
   --fw-600: 600; /* Semi-bold */
   --fw-700: 700; /* Bold */
+
+  /* line-height */
+  --l-150: 1.5; /* Line height 150% */
+}
+
+/* Default reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Styling fonts */
 .text-preset-1{
   font-family: "Young Serif", serif;
-  font-weight: 400;
-  font-size: 2.5rem
+  font-weight: var(--fw-400);
+  font-size: var(--fs-40);
+  color: var(--stone-900);
+}
+
+.text-preset-2{
+  font-family: "Young Serif", serif;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-28);
+  color: var(--brown-800);
+}
+
+.text-preset-3{
+  font-family: "Outfit", serif;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-20);
+  color: var(--rose-800);
+}
+
+.text-preset-4{
+  font-family: "Outfit", serif;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-16);
+  line-height: var(--l-150);
+}
+
+.text-preset-4-bold{
+  font-family: "Outfit", serif;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-16);
+  line-height: var(--l-150);
+  color: var(--brown-800);
 }
