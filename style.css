@@ -81,3 +81,20 @@
   line-height: var(--l-150);
   color: var(--brown-800);
 }
+
+/* Style for the recipe page */
+body{
+  display: grid;
+  place-items: center;
+  background: var(--stone-100);
+  min-height: 100vh;
+
+  footer{
+    font-size: 11px; 
+    text-align: center;
+
+    > p > a{
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
