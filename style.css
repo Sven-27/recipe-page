@@ -72,6 +72,7 @@
   font-weight: var(--fw-400);
   font-size: var(--fs-16);
   line-height: var(--l-150);
+  color: var(--stone-600);
 }
 
 .text-preset-4-bold{
@@ -80,6 +81,10 @@
   font-size: var(--fs-16);
   line-height: var(--l-150);
   color: var(--brown-800);
+}
+
+span{
+  font-weight: var(--fw-700);
 }
 
 /* Style for the recipe page */
