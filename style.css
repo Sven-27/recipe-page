@@ -27,6 +27,7 @@
   --fs-12: 12px;
   --fs-14: 14px;
   --fs-16: 16px;
+  --fs-18: 18px;
   --fs-20: 20px;
   --fs-28: 28px;
   --fs-36: 36px;
@@ -104,6 +105,7 @@ body{
   background: var(--stone-100);
   min-height: 100vh;
 
+  /* Main section of the page  */
   main{
     background: var(--white);
     padding: var(--s-500) var(--s-400);
@@ -112,9 +114,9 @@ body{
       margin-bottom: var(--s-400);
 
       img{
-        margin-top: -40px;
-        margin-left: -40px;
-        width: calc(100% + 70px);
+        margin-top: -40px; /* Minus value is setting image to the top */
+        margin-left: -32px; /* Minus value is setting image to the side  */
+        width: calc(100% + 64px); /* Calculation to set image full width */
       }
     }
 
@@ -151,12 +153,81 @@ body{
       }
     }
 
+
+    .instructions{
+      ol{
+        counter-reset: instruction-list; /* Setting a resest to custom counter for ol */
+
+        li{
+          list-style-type: none;
+          position: relative;
+          padding-left: var(--s-500);
+
+          &:before{
+            counter-increment: instruction-list; /* Incrementing counter */
+            content: counter(instruction-list)"."; /* displaying the numbers of the counter */
+            font-size: var(--fs-18);
+            font-weight: var(--fw-600);
+            color: var(--rose-800);
+            position: absolute;
+            top: -2px;
+            left: 8px;
+          }
+
+          &:not(:last-child){
+            margin-bottom: var(--s-100);
+          }
+        }
+      }
+    }
+
+    .nutrition{
+      padding-top: var(--s-400);
+
+      table{
+        width: 100%;
+        border-collapse: collapse;
+
+        caption{
+          text-align: left;
+          padding-block: var(--s-300);
+        }
+        tbody{
+          tr{
+            &:not(:last-child){
+              border-bottom: 1px solid var(--stone-150);
+
+              td{
+                padding-bottom: var(--s-150);
+              }
+            }
+            &:not(:first-child){
+              td{
+                padding-top: var(--s-150);
+              }
+            }
+          }
+          td{
+            width: 50%;
+
+            &:first-child{
+              padding-left: var(--s-400);
+            }
+             &:last-child{
+              padding-left: var(--s-200);
+            }
+          }
+        }
+      }
+    }
+
     ul{
       li{
         list-style-type: none;
         position: relative;
         padding-left: var(--s-500);
 
+          /* Setting custom sign so it can be styled properly */
         &:before{
           content: '\272D';
           font-size: var(--fs-12);
@@ -171,8 +242,9 @@ body{
   }
 
   footer{
-    font-size: 11px; 
+    font-size: var(--fs-16); 
     text-align: center;
+    padding-block: var(--s-200);
 
     > p > a{
       color: hsl(228, 45%, 44%);
