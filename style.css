@@ -166,11 +166,11 @@ body{
           &:before{
             counter-increment: instruction-list; /* Incrementing counter */
             content: counter(instruction-list)"."; /* displaying the numbers of the counter */
-            font-size: var(--fs-18);
+            font-size: var(--fs-16);
             font-weight: var(--fw-600);
             color: var(--rose-800);
             position: absolute;
-            top: -2px;
+            top: 0;
             left: 8px;
           }
 
