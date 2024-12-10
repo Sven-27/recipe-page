@@ -148,7 +148,7 @@ body{
       padding: var(--s-300);
       border-radius: 12px;
 
-      h3{
+      h2{
         padding-bottom: var(--s-200);
       }
     }
