@@ -177,7 +177,7 @@ body{
             content: counter(instruction-list)"."; /* displaying the numbers of the counter */
             font-size: var(--fs-16);
             font-weight: var(--fw-600);
-            color: var(--rose-800);
+            color: var(--brown-800);
             position: absolute;
             top: 0;
             left: 8px;
