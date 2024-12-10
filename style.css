@@ -110,6 +110,16 @@ body{
     background: var(--white);
     padding: var(--s-500) var(--s-400);
 
+    @media only screen and (min-width: 768px){
+      width: 616px;      
+      margin-top: var(--s-1600);
+      border-radius: 24px;
+    }
+
+    @media only screen and (min-width: 1440px){
+      width: 736px;      
+    }
+
     .img-container{
       margin-bottom: var(--s-400);
 
@@ -117,6 +127,13 @@ body{
         margin-top: -40px; /* Minus value is setting image to the top */
         margin-left: -32px; /* Minus value is setting image to the side  */
         width: calc(100% + 64px); /* Calculation to set image full width */
+
+        @media only screen and (min-width: 768px){
+          margin-top: unset;
+          margin-left: unset;
+          width: 100%;
+          border-radius: 12px;
+        }
       }
     }
 
@@ -207,6 +224,10 @@ body{
             }
              &:last-child{
               padding-left: var(--s-200);
+
+              @media only screen and (min-width: 768px){
+                padding-left: 0;
+              }
             }
           }
         }
